@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #f4f4f4;
+    font: 15px/1.5, Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    /* margin-top: 30px; */
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 75px;
+    color: white;
+    border-bottom: red 2px solid;
+    opacity: .7;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 1rem 1rem;
+}
+
+header #header{
+    float: left;
+    margin-top: 1.5rem;
+}
+header #header h3{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+header #header, header .current a{
+    color: red;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: red;
+    font-weight: bold;
+}
+
+#portfolio{
+    min-height: 580px;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../img/homepage.jpg); */
+    /* color: #FFFFFF; */
+    border-bottom: rgb(121, 8, 8) 2px solid;
+    
+}
+
+#portfolio-head{
+    /* position: relative; */
+    /* display: block; */
+    text-align: center;
+   padding-top: 30px;
+
+   
+  
+}
+.container_dis{
+    display: flex;
+    
+}
+.portfolio_dis{
+    flex: 1;
+    /* margin-top: 100px; */
+    /* padding: 20px; */
+    /* margin-right: 20px; */
+
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+
+  
+  
+  min-height: 200px;
+  width: 300px;
+  margin-top: 40px;
+  margin-right: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+#portfolio h1{
+    /* margin: 10px 0 10px 0; */
+    text-align: center;
+    color: #243B55;
+}
+#avatar{
+    width: 30px;
+    height: 30px;
+    margin-top: 22px;
+    border-radius: 50%;
+}
+
+.image{
+    height: 370px;
+    width: 280px;
+}
+
+#contact{
+    min-height: 570px;
+    /* background: #141E30;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #243B55, #141E30);  Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to right, #243B55, #141E30); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../img/homepage.jpg);
+    /* color: #FFFFFF; */
+    border-bottom: rgb(121, 8, 8) 2px solid;
+    /* height: 10em; */
+    position: relative
+}
+.container_form{
+    margin: o;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 370px;
+    border-radius: 15%;
+    
+}
+
+.container_form button{
+    width: 90px;
+}
+.form_inputs{
+    margin: 30px;
+}
+
+footer{
+    background: #948E99;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container_footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  header {
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    animation-name: slideInLeft;
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 75px;
+    color: white;
+    border-bottom: red 2px solid;
+    opacity: .7;
+  }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+  }
+
+@media only screen and (max-width: 600px) {
+    .container_dis{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        
+    }
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      header {
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 2;
+        animation-name: slideInLeft;
+        background: #666;
+        padding: 40px;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 10px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#">Books</a>
+      <a href="#">Quizzes</a>
+      <a href="#">Snippets</a>
+      <a href="#">Tools</a>
+    </header>
+  </body>
+</html>
